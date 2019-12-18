@@ -1,0 +1,41 @@
+        const song = {
+            title: Util.escapeMarkdown(video.title),
+            url: `https://www.youtube.com/watch?v=${video.id}`,
+            id: video.id,
+            length_m: video.duration.minutes,
+            length_s: video.duration.seconds,
+            requested: message.member.user.username
+        };
+
+        if(!serverQueue) {
+            const queueConstruct = {
+                textChannel: message.channel,
+                voiceChannel: voiceChannel,
+                connection: null,
+                songs: [],
+                volume: 0.5,
+                playing: true
+            };
+            queue.set(message.guild.id, queueConstruct);
+            queueConstruct.songs.push(song);
+
+            try {
+                queueConstruct.connection = await voiceChannel.join();
+                await play(message.guild, queueConstruct.songs[0]);
+                message.channel.stopTyping();
+            } catch (e) {
+                console.error(`Error joining voice channel. Error:\n${e}`);
+                queue.delete(message.guild.id);
+                message.channel.stopTyping();
+                return message.reply("There was an error joining the voice channel. Please talk to Zuke about it.");
+            }
+        } else {
+            serverQueue.songs.push(song);
+            message.channel.stopTyping();
+            const embed = new RichEmbed()
+                .setColor("#74d1ff")
+                .setThumbnail(`https://i.ytimg.com/vi/${song.id}/hqdefault.jpg`)
+                .setDescription(`**${serverQueue.songs[0].title}** has been added to the queue.`)
+                .addField("Requested By", `${serverQueue.songs[0].requested}`, true)
+            await serverQueue.textChannel.send(embed);
+        }
