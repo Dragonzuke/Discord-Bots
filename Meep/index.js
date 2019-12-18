@@ -87,4 +87,4 @@ client.on("message", async message => {
         await command.run(client, message, args);
 });
 
-client.login('NjUzNzQxNzMyNzM5MTUzOTQw.Xe7kQQ.FRfgnGRNFDHoC3u8tjGXOYCY6BA');
+client.login('NjUzNzQxNzMyNzM5MTUzOTQw.Xfqxww.ZfUqdibp7n5TuD_kMp1WG8rVNRY');
