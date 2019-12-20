@@ -3,6 +3,7 @@ const client = new Client();
 const fs = require("file-system");
 const { stripIndents } = require("common-tags");
 let xp = require("./xp.json");
+let functions = require("./functions.js");
 
 client.commands = new Collection();
 client.aliases = new Collection();
@@ -13,22 +14,12 @@ client.aliases = new Collection();
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.username}`);
-
     client.user.setPresence({
         game: {
             name: "Gavin's latest video",
             type: "WATCHING"
         }
     });
-});
-
-client.on("guildMemberAdd", async member => {
-    const embed = new RichEmbed()
-        .setColor("#00ffd1")
-        .setDescription(`Welcome **${member.displayName}** to the 6 Memedia Discord Server!`)
-        .setTimestamp();
-
-    member.guild.channels.get('610882772772454541').send(embed);
 });
 
 client.on("message", async message => {
@@ -86,4 +77,42 @@ client.on("message", async message => {
     if(command)
         await command.run(client, message, args);
 });
-client.login('NjU3MDA1Nzk2OTI3OTk1OTIy.Xfq6Zg.4aEQnI6a1gEEivZusjXs-K7LeCU');
+
+client.on("messageUpdate", async (oldMessage, newMessage) => {
+    const logChannel = newMessage.guild.channels.find(channel => channel.name === "chat-logs") || newMessage.channel;
+
+    if(newMessage.author.bot) return;
+
+    const embed = new RichEmbed()
+        .setColor("#00ffe4")
+        .setTitle("Message Edit")
+        .setThumbnail(newMessage.author.displayAvatarURL)
+        .setFooter(newMessage.member.displayName, newMessage.author.displayAvatarURL)
+        .setTimestamp()
+        .setDescription(stripIndents`Edited message in ${newMessage.channel}`)
+        .addField("Previous Message", functions.longMessageFix(oldMessage.content.toString(), 50), true)
+        .addField("New Message", functions.longMessageFix(newMessage.content.toString(), 50), true);
+
+    await logChannel.send(embed);
+});
+
+client.on("messageDelete", async message => {
+    const logChannel = message.guild.channels.find(channel => channel.name === "chat-logs") || message.channel;
+    const welcome = message.guild.channels.find(welcome => welcome.name === "welcome");
+
+    if(message.author.bot) return;
+    if(message.channel === welcome) return;
+
+    const embed = new RichEmbed()
+        .setColor("#00ffe4")
+        .setTitle("Message Delete")
+        .setThumbnail(message.author.displayAvatarURL)
+        .setFooter(message.member.displayName, message.author.displayAvatarURL)
+        .setTimestamp()
+        .setDescription(stripIndents`Deleted message in ${message.channel}`)
+        .addField("Message", functions.longMessageFix(message.content.toString(), 50), true);
+
+    await logChannel.send(embed);
+});
+
+client.login('NjU3MDA2MzU4MjgxMDYwMzY0.XfrL7A.TkhJRo-zbeg7sBAKoSCqeSlu0u8');

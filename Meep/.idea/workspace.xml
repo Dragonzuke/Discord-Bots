@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98fa34d2-95df-4370-b760-4d2a07201556" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/commands/info/news.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands/util/agree.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/fun/meme.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/meme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/fun/the_game.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/the_game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/users.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xp.json" beforeDir="false" afterPath="$PROJECT_DIR$/xp.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +89,7 @@
       <workItem from="1576208509808" duration="13864000" />
       <workItem from="1576357500679" duration="4720000" />
       <workItem from="1576420657242" duration="1528000" />
-      <workItem from="1576709462432" duration="1977000" />
+      <workItem from="1576709462432" duration="9897000" />
     </task>
     <servers />
   </component>
