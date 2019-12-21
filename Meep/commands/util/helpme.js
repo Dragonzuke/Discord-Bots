@@ -17,7 +17,7 @@ module.exports = {
             .setTimestamp()
             .setFooter(message.guild.name, message.guild.iconURL)
             .setAuthor("Help Requested", message.author.displayAvatarURL)
-            .addField("Reason", args.slice(1).join(" "))
+            .addField("Reason", args.slice(0).join(" "))
             .addField("Channel", `\`#${message.channel}\``);
 
         await channel.send(embed);
