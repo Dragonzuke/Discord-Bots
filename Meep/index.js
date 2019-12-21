@@ -103,7 +103,7 @@ client.on("messageDelete", async message => {
     const welcome = message.guild.channels.find(welcome => welcome.name === "welcome");
 
     if(message.author.bot) return;
-    if(message.channel === welcome) return;
+    if(message.content.startsWith("?")) return;
 
     const embed = new RichEmbed()
         .setColor("#00ffe4")
@@ -117,4 +117,4 @@ client.on("messageDelete", async message => {
     await logChannel.send(embed);
 });
 
-client.login('NjU3MDA2MzU4MjgxMDYwMzY0.XfrL7A.TkhJRo-zbeg7sBAKoSCqeSlu0u8');
+client.login('NjU3NTg0MzI3ODgxOTE2NDM4.XfzVMA.uUWHgy85bIKPn_qwWakC-b1uTkQ');
