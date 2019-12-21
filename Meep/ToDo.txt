@@ -1,0 +1,7 @@
+Commands:
+    - helpme (sends a help message in support)
+    - addnote (Adds notes to a user)
+
+Systems:
+    - Advanced logging system
+        - Include list of punishments with reasons

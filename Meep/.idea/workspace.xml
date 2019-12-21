@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98fa34d2-95df-4370-b760-4d2a07201556" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/commands/info/news.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commands/util/agree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Beep/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToDo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands/util/helpme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Beep/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Beep/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Beep/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Beep/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Beep/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Beep/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/fun/meme.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/meme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/fun/the_game.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/the_game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xp.json" beforeDir="false" afterPath="$PROJECT_DIR$/xp.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +90,8 @@
       <workItem from="1576208509808" duration="13864000" />
       <workItem from="1576357500679" duration="4720000" />
       <workItem from="1576420657242" duration="1528000" />
-      <workItem from="1576709462432" duration="9897000" />
+      <workItem from="1576709462432" duration="10530000" />
+      <workItem from="1576959808984" duration="1634000" />
     </task>
     <servers />
   </component>
