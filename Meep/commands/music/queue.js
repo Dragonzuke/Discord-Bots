@@ -1,6 +1,6 @@
 module.exports = {
-    name: 'queue',
-    description: 'Queue command.',
+    name: "queue",
+    category: "music",
     run: async(message) => {
         const serverQueue = message.client.queue.get(message.guild.id);
         if (!serverQueue) return message.channel.send('There is nothing playing.');

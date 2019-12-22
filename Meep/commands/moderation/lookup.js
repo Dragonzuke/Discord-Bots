@@ -13,10 +13,10 @@ module.exports = {
 
         if(!message.member.hasPermission("VIEW_AUDIT_LOG")) return message.reply("❌ You don't have permission to use this.");
         if(!message.guild.me.hasPermission("VIEW_AUDIT_LOG")) return message.reply("❌ I don't have permission to use this.");
-        if(!args[0]) return message.reply("Please provide a person to lookup.").then(m => m.delete(5000));
+        if(!args[0]) return message.reply("Please provide a person to lookup.");
 
         const toLookup = message.mentions.members.first() || message.guild.members.get(args[0]);
-        if(!toLookup) return message.reply("Couldn't find that member.").then(m => m.delete(5000));
+        if(!toLookup) return message.reply("Couldn't find that member.");
         if(!users[toLookup.id]) {
             users[toLookup.id] = {
                 warnings: 0,

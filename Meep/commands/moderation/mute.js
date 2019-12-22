@@ -15,16 +15,16 @@ module.exports = {
 
         if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("❌ You don't have permission to use this.");
         if(!message.guild.me.hasPermission("MANAGE_MESSAGES")) return message.reply("❌ I don't have permission to use this.");
-        if(!args[0]) return message.reply("Please provide a person to mute.").then(m => m.delete(5000));
-        if(!args[1]) return message.reply("Please provide a time for mute.").then(m => m.delete(5000));
-        if(!args[2]) return message.reply("Please provide a reason for mute.").then(m => m.delete(5000));
+        if(!args[0]) return message.reply("Please provide a person to mute.");
+        if(!args[1]) return message.reply("Please provide a time for mute.");
+        if(!args[2]) return message.reply("Please provide a reason for mute.");
 
         const toMute = message.mentions.members.first() || message.guild.members.get(args[0]);
         const muteRole = message.guild.roles.find("name", "Muted");
 
-        if(!toMute) return message.reply("Couldn't find that member.").then(m => m.delete(5000));
-        if(!muteRole) return message.reply("Couldn't find the mute role. Please make it manually.").then(m => m.delete(5000));
-        if(message.author.id === toMute.id) return message.reply("Why don't you just stay quiet? (Can't mute yourself)").then(m => m.delete(5000));
+        if(!toMute) return message.reply("Couldn't find that member.");
+        if(!muteRole) return message.reply("Couldn't find the mute role. Please make it manually.");
+        if(message.author.id === toMute.id) return message.reply("Why don't you just stay quiet? (Can't mute yourself)");
         if(!toMute.kickable) return message.reply("Can't mute staff 😋").then(m => m.delete(5000));
 
         const embed = new RichEmbed()

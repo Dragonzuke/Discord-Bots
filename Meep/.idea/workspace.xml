@@ -2,21 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98fa34d2-95df-4370-b760-4d2a07201556" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Beep/commands/nowplaying.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Beep/commands/pause.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Beep/commands/play.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Beep/commands/queue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Beep/commands/resume.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Beep/commands/skip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Beep/commands/stop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Beep/commands/volume.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Beep/handler/command.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Beep/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Beep/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Beep/Old Code.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Beep/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Beep/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Beep/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Beep/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Beep/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Beep/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/fun/the_game.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/info/level.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/info/level.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/moderation/ban.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/moderation/ban.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/moderation/clear.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/moderation/clear.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/moderation/lookup.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/moderation/lookup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/moderation/mute.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/moderation/mute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/moderation/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/moderation/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/moderation/setlevel.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/moderation/setlevel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/moderation/unban.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/moderation/unban.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/moderation/warn.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/moderation/warn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/music/nowplaying.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/music/nowplaying.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/music/pause.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/music/pause.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/music/play.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/music/play.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/music/queue.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/music/queue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/music/resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/music/resume.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/music/skip.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/music/skip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/music/stop.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/music/stop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/music/volume.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/music/volume.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +103,8 @@
       <workItem from="1576357500679" duration="4720000" />
       <workItem from="1576420657242" duration="1528000" />
       <workItem from="1576709462432" duration="10530000" />
-      <workItem from="1576959808984" duration="3579000" />
+      <workItem from="1576959808984" duration="4187000" />
+      <workItem from="1577032023528" duration="1033000" />
     </task>
     <servers />
   </component>

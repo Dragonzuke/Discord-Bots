@@ -1,7 +1,9 @@
 module.exports = {
-    name: 'pause',
-    description: 'Pause command.',
+    name: "pause",
+    category: "music",
     run: async(message) => {
+        if(!message.member.roles.find(role => role.name === "DJ")) return message.channel.send("You must be a DJ to manage music.");
+
         const serverQueue = message.client.queue.get(message.guild.id);
         if (serverQueue && serverQueue.playing) {
             serverQueue.playing = false;

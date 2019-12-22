@@ -1,4 +1,3 @@
-const { promptMessage } = require("../../functions");
 const { RichEmbed } = require("discord.js");
 const { stripIndents } = require("common-tags");
 
@@ -17,8 +16,8 @@ module.exports = {
             const banList = await message.guild.fetchBans();
             const toUnban = banList.find(user => user.id === args[0]);
 
-            if (!toUnban) return message.reply("Couldn't find that member.").then(m => m.delete(5000));
-            if (message.author.id === toUnban.id) return message.reply("Why don't you just leave? (Can't ban yourself)").then(m => m.delete(5000));
+            if (!toUnban) return message.reply("Couldn't find that member.");
+            if (message.author.id === toUnban.id) return message.reply("But... you're already here? (Can't unban yourself)");
 
             message.guild.fetchBans().then(banned => {
                 let list = banned.map(user => user.tag).join('\n');

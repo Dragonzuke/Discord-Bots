@@ -28,8 +28,7 @@ module.exports = {
                 .addField("Current Level", `${curLvl}`)
                 .addField("Current XP", `${curXP}`)
                 .addField("XP to Next Level", `${xpToNextLvl}`);
-            await message.channel.send(embed);
-            return;
+            return await message.channel.send(embed);
         }
 
         if(!xp[message.author.id]) {

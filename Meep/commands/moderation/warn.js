@@ -14,13 +14,13 @@ module.exports = {
 
         if(!message.member.hasPermission("KICK_MEMBERS")) return message.reply("❌ You don't have permission to use this.");
         if(!message.guild.me.hasPermission("KICK_MEMBERS")) return message.reply("❌ I don't have permission to use this.");
-        if(!args[0]) return message.reply("Please provide a person to warn.").then(m => m.delete(5000));
-        if(!args[1]) return message.reply("Please provide a reason to warn.").then(m => m.delete(5000));
+        if(!args[0]) return message.reply("Please provide a person to warn.");
+        if(!args[1]) return message.reply("Please provide a reason to warn.");
         const toWarn = message.mentions.members.first() || message.guild.members.get(args[0]);
 
-        if(!toWarn) return message.reply("Couldn't find that member.").then(m => m.delete(5000));
+        if(!toWarn) return message.reply("Couldn't find that member.");
         if(message.author.id === toWarn.id) return message.reply("Why don't you just behave? (Can't warn yourself)").then(m => m.delete(5000));
-        if(!toWarn.kickable) return message.reply("Can't warn staff 😋").then(m => m.delete(5000));
+        if(!toWarn.kickable) return message.reply("Can't warn staff 😋");
 
         const embed = new RichEmbed()
             .setColor("#ffdf00")

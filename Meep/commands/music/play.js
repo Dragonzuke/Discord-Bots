@@ -3,10 +3,8 @@ const ytdl = require('ytdl-core');
 const ytdlDiscord = require('ytdl-core-discord');
 
 module.exports = {
-    name: 'play',
-    description: 'Play command.',
-    usage: '[command name]',
-    args: true,
+    name: "play",
+    category: "music",
     run: async (message, args) => {
         const { voiceChannel } = message.member;
         if (!voiceChannel) return message.channel.send("You need to be in a voice channel to use me!");

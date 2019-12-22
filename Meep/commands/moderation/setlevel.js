@@ -7,8 +7,8 @@ module.exports = {
     run: async (client, message, args) => {
 
         if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("❌ You don't have permission to use this.");
-        if(!args[0]) return message.reply("Please provide a user to set the level").then(m => m.delete(5000));
-        if(!args[1]) return message.reply("Please provide a level").then(m => m.delete(5000));
+        if(!args[0]) return message.reply("Please provide a user to set the level");
+        if(!args[1]) return message.reply("Please provide a level");
         if(typeof(args[1]) === "number") return message.reply("The level must be a number!");
         const toLevel = message.mentions.members.first() || message.guild.members.get(args[0]);
 

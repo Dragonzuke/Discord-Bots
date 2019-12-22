@@ -14,13 +14,13 @@ module.exports = {
 
         if(!message.member.hasPermission("BAN_MEMBERS")) return message.reply("❌ You don't have permission to use this.");
         if(!message.guild.me.hasPermission("BAN_MEMBERS")) return message.reply("❌ I don't have permission to use this.");
-        if(!args[0]) return message.reply("Please provide a person to ban.").then(m => m.delete(5000));
-        if(!args[1]) return message.reply("Please provide a reason to ban.").then(m => m.delete(5000));
+        if(!args[0]) return message.reply("Please provide a person to ban.");
+        if(!args[1]) return message.reply("Please provide a reason to ban.");
         const toBan = message.mentions.members.first() || message.guild.members.get(args[0]);
 
-        if(!toBan) return message.reply("Couldn't find that member.").then(m => m.delete(5000));
-        if(message.author.id === toBan.id) return message.reply("Why don't you just leave? (Can't ban yourself)").then(m => m.delete(5000));
-        if(!toBan.bannable) return message.reply("Can't ban staff 😋").then(m => m.delete(5000));
+        if(!toBan) return message.reply("Couldn't find that member.");
+        if(message.author.id === toBan.id) return message.reply("Why don't you just leave? (Can't ban yourself)");
+        if(!toBan.bannable) return message.reply("Can't ban staff 😋");
 
         const embed = new RichEmbed()
             .setColor("#a50001")
