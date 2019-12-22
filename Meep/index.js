@@ -5,8 +5,6 @@ const { stripIndents } = require("common-tags");
 let xp = require("./xp.json");
 let functions = require("./functions.js");
 
-//YouTube API: AIzaSyAamO7NK8d6nwSZ75sl2ks5vhpnwObuVxI
-
 client.commands = new Collection();
 client.aliases = new Collection();
 

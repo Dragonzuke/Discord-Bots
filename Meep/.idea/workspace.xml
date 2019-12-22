@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98fa34d2-95df-4370-b760-4d2a07201556" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/commands/util/helpme.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/util/helpme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Beep/commands/nowplaying.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Beep/commands/pause.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Beep/commands/play.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Beep/commands/queue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Beep/commands/resume.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Beep/commands/skip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Beep/commands/stop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Beep/commands/volume.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Beep/handler/command.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Beep/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Beep/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Beep/Old Code.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Beep/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Beep/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Beep/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Beep/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Beep/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Beep/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,13 +33,16 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1UlcSIluF2yoAiLh8zkP0yhsH7N" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -82,12 +99,15 @@
       <workItem from="1576357500679" duration="4720000" />
       <workItem from="1576420657242" duration="1528000" />
       <workItem from="1576709462432" duration="10530000" />
-      <workItem from="1576959808984" duration="1863000" />
+      <workItem from="1576959808984" duration="3579000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="501" y="170" key="#Node.js_and_NPM" timestamp="1576121829481">
