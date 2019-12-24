@@ -22,6 +22,24 @@ client.on('ready', () => {
     });
 });
 
+client.on("guildMemberAdd", (member) => {
+        const embed = new RichEmbed()
+            .setDescription(`${member.displayName} has joined the Memebers!`)
+            .setColor("#ff6284")
+            .setTimestamp();
+
+        member.guild.channels.find(c => c.name === "join-leave").send(embed);
+});
+
+client.on("guildMemberRemove", (member) => {
+    const embed = new RichEmbed()
+        .setDescription(`${member.displayName} doesn't like memes anymore :(`)
+        .setColor("#ff6284")
+        .setTimestamp();
+
+    member.guild.channels.find(c => c.name === "join-leave").send(embed);
+});
+
 client.on("message", async message => {
 
     if(message.author.bot) return;
@@ -98,7 +116,6 @@ client.on("messageUpdate", async (oldMessage, newMessage) => {
 
 client.on("messageDelete", async message => {
     const logChannel = message.guild.channels.find(channel => channel.name === "chat-logs") || message.channel;
-    const welcome = message.guild.channels.find(welcome => welcome.name === "welcome");
 
     if(message.author.bot) return;
     if(message.content.startsWith("?")) return;
