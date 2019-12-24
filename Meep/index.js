@@ -24,20 +24,24 @@ client.on('ready', () => {
 
 client.on("guildMemberAdd", (member) => {
         const embed = new RichEmbed()
-            .setDescription(`${member.displayName} has joined the Memebers!`)
+            .setDescription(`${member} has joined the Memebers!`)
+            .setThumbnail(member.user.displayAvatarURL)
             .setColor("#ff6284")
             .setTimestamp();
 
-        member.guild.channels.find(c => c.name === "join-leave").send(embed);
+        const channel = member.guild.channels.find(c => c.name === `join-leave`);
+        channel.send(embed);
 });
 
 client.on("guildMemberRemove", (member) => {
     const embed = new RichEmbed()
-        .setDescription(`${member.displayName} doesn't like memes anymore :(`)
+        .setDescription(`${member} doesn't like memes anymore :(`)
+        .setThumbnail(member.user.displayAvatarURL)
         .setColor("#ff6284")
         .setTimestamp();
 
-    member.guild.channels.find(c => c.name === "join-leave").send(embed);
+    const channel = member.guild.channels.find(c => c.name === `join-leave`);
+    channel.send(embed);
 });
 
 client.on("message", async message => {
