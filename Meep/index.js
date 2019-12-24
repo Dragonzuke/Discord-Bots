@@ -137,4 +137,4 @@ client.on("messageDelete", async message => {
     await logChannel.send(embed);
 });
 
-client.login('NjU3NTg0MzI3ODgxOTE2NDM4.XfzVMA.uUWHgy85bIKPn_qwWakC-b1uTkQ');
+client.login('NjU3NTg0MzI3ODgxOTE2NDM4.XgItwA.OVxUZgeud1KBtlQAPKSO8cseUN8');
