@@ -42,6 +42,16 @@ module.exports = {
             .addField("# of Mutes", `${mutes}`)
             .addField("# of Bans", `${bans}`);
 
+        if(warnings >= 3) {
+            embed.setColor("#fff200");
+        }
+        else if(mutes >= 2) {
+            embed.setColor("#ff6e00");
+        }
+        else if(bans >= 1) {
+            embed.setColor("#ff0e00");
+        }
+
         await message.channel.send(embed);
     }
 };
