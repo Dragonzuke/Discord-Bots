@@ -1,5 +1,6 @@
 const { Client, RichEmbed, Collection } = require("discord.js");
 const client = new Client();
+
 const fs = require("file-system");
 const { stripIndents } = require("common-tags");
 let xp = require("./xp.json");

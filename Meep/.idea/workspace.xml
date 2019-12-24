@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98fa34d2-95df-4370-b760-4d2a07201556" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/commands/util/eventTesting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands/moderation/unmute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/music/nowplaying.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/music/pause.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/music/play.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/music/queue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/music/resume.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/music/skip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/music/stop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/music/volume.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/moderation/mute.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/moderation/mute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +89,7 @@
       <workItem from="1576420657242" duration="1528000" />
       <workItem from="1576709462432" duration="10530000" />
       <workItem from="1576959808984" duration="4187000" />
-      <workItem from="1577032023528" duration="2765000" />
+      <workItem from="1577032023528" duration="4027000" />
     </task>
     <servers />
   </component>

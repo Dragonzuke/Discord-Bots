@@ -1,5 +1,5 @@
 const { promptMessage } = require("../../functions");
-const { RichEmbed, Collection } = require("discord.js");
+const { RichEmbed } = require("discord.js");
 const ms = require("ms");
 const { stripIndents } = require("common-tags");
 const fs = require("file-system");
